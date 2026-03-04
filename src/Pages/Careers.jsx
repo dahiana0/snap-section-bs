@@ -18,7 +18,7 @@ export const Careers = () => {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit quisquam doloremque  </p>
                                 <br />
 
-                                <a href="http://www.jango.com" className="btn btn-dark">Start exploring</a>
+                                <a href="http://www.jango.com" className="btn btn-success">Start exploring</a>
 
 
                                 <br />
@@ -108,7 +108,7 @@ export const Careers = () => {
             <h1> Ready to cook smaeter?</h1>
             <br />
             <p>Hit the button, pick a recipe, and get dinner on the table—fast.</p>
-            <a href="http://www.jango.com" className="btn btn-dark">Browse recipes</a>
+            <a href="http://www.jango.com" className="btn btn-success">Browse recipes</a>
 
            </div>
         </>
