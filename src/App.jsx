@@ -4,6 +4,7 @@ import { Careers } from './Pages/Careers.jsx'
 import { Home } from './Pages/Home'
 import { About } from './Pages/About.jsx'
 import { Login } from './Pages/Login.jsx'
+import { Registre } from './Pages/Registre.jsx'
 
 export const App = () => {
 
@@ -12,8 +13,9 @@ export const App = () => {
     {/*/<Header />
     <Home />
     < Careers />
-      <About/> */}
-      <Login/>
+      <About/> 
+      <Login/> */}
+      <Registre/>
      </>
     
   )
