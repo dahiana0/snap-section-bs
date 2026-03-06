@@ -4,6 +4,8 @@ export const Home = () => {
 
     return (
         <>
+        <br />
+        <br />
             <div className="container">
                 <div className="row">
                     <div className="col-6 ">
@@ -30,7 +32,7 @@ export const Home = () => {
                     
                     <div className="col-6 ">
                         <div className="">
-                            <img src="public/img Bost.jpg" className="img-cropped " alt="" />
+                            <img src="public/Home.jpg" className="img-cropped " alt="" />
                         </div>
                     </div>
                 </div>

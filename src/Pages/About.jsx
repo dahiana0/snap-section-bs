@@ -6,7 +6,6 @@ import { Header } from '../components/Header.jsx'
 export const About = () => {
     return (
         <>
-            <Header />
             <br />
             <br />
             <div className="container d-flex flex-column gap-5 bg-light w-100" >

@@ -6,7 +6,7 @@ import { Header } from '../components/Header.jsx'
 export const Login = () => {
     return (
         <>
-            <Header />
+          
 
             <div className="container w-50 mt-5 bg-body-secondary p-5 rounded-3 border border-success">
             <img src="public/Usuario .png" className="rounded mx-auto d-block w-25" alt="...">
