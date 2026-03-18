@@ -58,7 +58,7 @@ export const Careers = () => {
                         </div>
 
                         <div className="col">
-                            <img src="./public/Lupa.png" width={100} alt="" />
+                            <img src="./Lupa.png" width={100} alt="" />
                             <br />
                             Search in seconds
                             <p>Find the perfect recipe for any occasion with our powerful search.</p>
