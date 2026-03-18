@@ -1,85 +1,42 @@
-import React from "react";
-import BannerCake from "../components/BannerCake";
-import CardCake from "../components/CardCake";
-import Header from "../components/Header";
+import "../stylessheets/Home.css"
 
 export const Home = () => {
-  return (
-    <>
-      <Header
-        colorHeader="#740C13"
-        searchIcon="./public/search (1).svg"
-        bellIcon="./public/bell (2).svg"
-        userIcon="./public/user (1).svg"
-        username="STARlD"
-      />
 
-      <BannerCake
-        subtitulo="Un mundo de postres deliciosos para disfrutar"
-        titulo="Pastel Red Velvet"
-        descripcion="Esponjoso pastel de suave cacao con su característico color rojo intenso. Su masa ligera y aterciopelada se combina perfectamente con una cremosa cobertura dulce que resalta su sabor delicado y equilibrado. Cada porción ofrece una textura suave y un toque dulce irresistible, convirtiéndolo en un postre elegante y delicioso para cualquier ocasión. Un pastel clásico, llamativo y perfecto para los amantes de los sabores suaves y cremosos."
-        imagen="./public/Torta 1 .png"
-        color="#740C13"
-        boton1Text="Ver Receta"
-        boton1Imagen="/IconoReceta.png"
-        boton2Text="Añadir al Carrito"
-        boton2Imagen="/IconoCarrito.png"
-      />
-
-      <div className="container mt-5">
-
-        <h1
-          style={{
-            fontFamily: "milk",
-            color: "#740C13",
-            fontSize: "70px",
-            textAlign: "center"
-          }}
-        >
-          Recetas Destacadas
-        </h1>
-
+    return (
+        <>
         <br />
+        <br />
+            <div className="container">
+                <div className="row">
+                    <div className="col-6 ">
 
-        <div className="row row-cols-2 row-cols-md-4 g-5 justify-content-center">
+                        <div className="d-flex flex-column justitify-content-center h-100 gap-5">
 
-          <CardCake
-            titulo="Cupcake de Chocolate"
-            descripcion="Cupcake suave con textura esponjosa con delicioso sabor a chocolate y crema dulce.."
-            imagen="./public/Choco.png"
-            colorCard="#8C4830"
-            colorBoton="#D9946C"
-          />
+                            <div >
+                                <h1>MAKE <br /> REMOTE WORK</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Quia labore ut vitae quis impedit nulla quod eos? Ab ea molestias,
+                                    sequi esse ut similique nesciunt veritatis nisi! Eaque, saepe asperiores
+                                </p>
+                                <a href="https://mx.pinterest.com/" className="btn btn-dark">Learn More</a>
+                            </div>
 
-          <CardCake
-            titulo="Pastel de Uvas Verdes"
-            descripcion="Pastel suave con textura esponjosa con delicioso sabor a uvas verdes y crema dulce."
-            imagen="./public/Uvas.png"
-            colorCard="#CDD973"
-            colorBoton="#A3BF3B"
-          />
-
-          <CardCake
-            titulo="Cheesecake de Fresa"
-            descripcion="Cheesecake suave, cremoso, dulce, fresco y delicioso con sabor a fresa."
-            imagen="./Fresa.png"
-            colorCard="#F25E5E"
-            colorBoton="#A61212"
-          />
-
-          <CardCake
-            titulo="Cupcake de Naranja"
-            descripcion="Cupcake suave, esponjoso, dulce, aromático, fresco, ligero, cítrico, cremoso, delicioso y lleno de sabor a naranja."
-            imagen="./public/CupNaranja.png"
-            colorCard="#f79b4b"
-            colorBoton="#f78800"
-          />
-
-        </div>
-      </div>
-
-      <br />
-
-    </>
-  );
-};
+                            <div className="d-flex gap-3 aling-items-center">
+                                <img src="./logo 3.svg" height="25" alt="" />
+                                <img src="./mux-logo.png" height="25" alt="" />
+                                <img src="./wiz.svg" height="25" alt="" />
+                                <img src="./zephyr_cloud.png"height="25" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="col-6 ">
+                        <div className="">
+                            <img src="./Home.jpg" className="img-cropped " alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}

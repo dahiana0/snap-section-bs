@@ -1,97 +1,66 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../styles/css.css";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Header = ({
-  colorHeader = "#787569",
-  searchIcon = "/search.svg",
-  bellIcon = "/bell.svg",
-  userIcon = "/user.svg",
-  username = "X_AE_A-13"
-}) => {
+export const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg" style={{ fontFamily: "'milk'", color: colorHeader }}>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary border border-success">
       <div className="container">
+        <Link className= " navbar-brand "to="/">SNAP</Link>
 
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-        <Link className="navbar-brand" to="/" style={{ color: colorHeader, fontSize: "50px" }}>
-          Faydelia
-        </Link>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Features
+              </a>
+            </li>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <div className="collapse navbar-collapse" id="navbarNav" style={{ fontSize: "21px" }}>
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link to="/" className="nav-link" style={{ color: colorHeader }}>Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/cakes" className="nav-link" style={{ color: colorHeader }}>Cakes</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/cupcakes" className="nav-link" style={{ color: colorHeader }}>Cupcakes</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/desserts" className="nav-link" style={{ color: colorHeader }}>Desserts</Link>
+            <ul className="dropdown-menu">
+              <li><a className="dropdown-item" href="#">Action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><hr className="dropdown-divider" /></li>
+              <li><a className="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  company
+                </a>
               </li>
             </ul>
-          </div>
+
+            <ul className="dropdown-menu">
+              <li><a className="dropdown-item" href="#">Action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><hr className="dropdown-divider" /></li>
+              <li><a className="dropdown-item" href="#">Something else here</a></li>
+            </ul>
 
 
-          <form className="d-flex ms-auto align-items-center w-20" role="search">
-            <div style={{ position: "relative" }}>
-              <img
-                src={searchIcon}
-                alt="Buscar"
-                style={{
-                  position: "absolute",
-                  left: "10px",
-                  top: "50%",
-                  transform: "translateY(-50%)",
-                  width: "16px"
-                }}
-              />
-              <input
-                className="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                style={{ paddingLeft: "35px", color: colorHeader }}
-              />
-            </div>
-
-            <a href="#" className="ms-3">
-              <img src={bellIcon} width="28" height="28" alt="Notificaciones" />
-            </a>
-
-            <a href="#" className="ms-3">
-              <img src={userIcon} width="28" height="28" alt="Usuario" />
-            </a>
-
-            <li className="nav-item dropdown ms-3" style={{ fontSize: "21px" }}>
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                style={{ color: colorHeader }}
-              >
-                {username}
-              </a>
-
-              <ul className="dropdown-menu" style={{ fontSize: "15px" }}>
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li className="nav-item">
+              
+              <Link className='nav-link' to="/careers">Careers</Link>
             </li>
-          </form>
+
+            <li className="nav-item">
+           
+              <Link className='nav-link' to="/about">About</Link>
+            </li>
+          </ul>
+
+          <div>
+            <Link className="btn btn text -secondary" to="/login">Login</Link>
+            <Link className="btn btn-outline-secondary border border-success" to="/registre">Registre</Link>
+            
+          </div>
         </div>
       </div>
     </nav>
-  );
-};
-
-export default Header;
+  )
+}
